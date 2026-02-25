@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DD59ACEC-6939-2785-D158-D9EFE3EC1D49" containerWithKeyObject="3806DA3A-5EE0-303C-993E-02E93B276E69" localFKIndex="D761C1C7-BAFC-15AA-2FFD-421493D5A54E" name="Regis_MK_Kelas_FK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>B2DFAA4F-7452-9876-863F-4CCFF7EF31E0</generatorID>
+<ownerDesignName>Pertemuan 1 Anugerah Fakhriza Reswara</ownerDesignName>
+<referredTableLongName>Kelas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EA786D97-C314-4E67-280D-5906A414B969</referredTableID>
+<keyObject>2ADC393D-2B60-A871-74BD-5FD216B14A83</keyObject>
+<referredKeyID>2ADC393D-2B60-A871-74BD-5FD216B14A83</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Kode_Kelas</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

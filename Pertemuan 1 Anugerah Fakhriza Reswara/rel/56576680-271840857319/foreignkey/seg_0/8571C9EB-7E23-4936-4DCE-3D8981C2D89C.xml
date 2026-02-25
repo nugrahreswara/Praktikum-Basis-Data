@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8571C9EB-7E23-4936-4DCE-3D8981C2D89C" containerWithKeyObject="EA786D97-C314-4E67-280D-5906A414B969" localFKIndex="7AEDF393-7B47-4C2C-1C56-F9930E8C0325" name="Kelas_Mata_Kuliah_FK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>89F96555-410C-4E12-DC77-162C2799168D</generatorID>
+<ownerDesignName>Pertemuan 1 Anugerah Fakhriza Reswara</ownerDesignName>
+<referredTableLongName>Mata_Kuliah</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B529587E-258F-E283-2331-A8FA7CAA2DC8</referredTableID>
+<keyObject>57803C82-FE9C-89F6-B470-4E18D18B7FD7</keyObject>
+<referredKeyID>57803C82-FE9C-89F6-B470-4E18D18B7FD7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Kode_MK</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

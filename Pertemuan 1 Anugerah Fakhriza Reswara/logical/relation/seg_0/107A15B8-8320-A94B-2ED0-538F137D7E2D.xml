@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MR" directorySegmentName="seg_0" id="107A15B8-8320-A94B-2ED0-538F137D7E2D">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:07:29 UTC</createdTime>
+<ownerDesignName>Pertemuan 1 Anugerah Fakhriza Reswara</ownerDesignName>
+<engineerTo>
+<item key="56576680-D5B4-A5B3-1C7D-271840857319" value="true"/>
+</engineerTo>
+<sourcePk>E0FDAD73-FB78-C960-4311-4532DC3D281C</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Melakukan</nameOnSource>
+<nameOnTarget>Dilakukan</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EDEF81D6-0905-F411-5F6E-5262E99EE377</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AEFBD8BF-DC14-3C35-E3D0-A80B49F72A49</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D46C84E-9007-9B69-F93F-E2BF6787A52E" name="Dosen">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>B0F5EE19-1EC2-E605-4EEF-FB6506F6E8D7</generatorID>
+<ownerDesignName>Pertemuan 1 Anugerah Fakhriza Reswara</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NIP" id="1F50CF5E-3EE5-B9AC-9047-5551A96204E1">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>D2B7B84A-4DF9-C020-0C03-A83645B48B33</generatorID>
+<ownerDesignName>Pertemuan 1 Anugerah Fakhriza Reswara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nama_Dosen" id="17371582-4AEF-2F99-66EE-4ECFE833705F">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>419FEC7F-D6A8-B18A-1DE2-592D785D1D3A</generatorID>
+<ownerDesignName>Pertemuan 1 Anugerah Fakhriza Reswara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="8FE94CE2-4C7D-CF8E-1237-1A4DE991E881">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>C69F1E6B-7E63-77FA-3578-AED984DCD8CF</generatorID>
+<ownerDesignName>Pertemuan 1 Anugerah Fakhriza Reswara</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45D87B78-87D7-791C-9215-F11365FF3B25" name="Dosen_PK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>A34B408B-2331-6899-46D6-F04E0AE95E33</generatorID>
+<ownerDesignName>Pertemuan 1 Anugerah Fakhriza Reswara</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F50CF5E-3EE5-B9AC-9047-5551A96204E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

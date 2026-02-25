@@ -1,0 +1,19 @@
+Atribut = Kolom dari tabel entitas, simbolnya Elips
+
+Mandatory = Wajib Diisi
+
+Primary Key (PK) = Unik, wajib ada di setiap entity, tidak boleh NULL, biasanya berbentuk angka/numerik.
+
+Foreign Key (FK) = atribut yang merujuk ke PK di entitas lain, FK dipakai untuk membangun relasi antar entitas nilainya harus ada di PK yang dirujuk, dan
+berfungsi sebagai "jembatan" antar entitas.
+
+Precision = Bisa menampung berapa angka
+Scale = koma wajib dibelakang angka dibelakang
+
+contoh
+Precision = 10
+Scale = 2
+
+12345678,90 
+8 digit didepan koma, 2 digit dibelakang koma
+
