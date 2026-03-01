@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pesanv2" directorySegmentName="seg_0" id="E525DB71-3409-434C-A566-CFA479C76041">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 08:14:38 UTC</createdTime>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<sourcePk>7A39818B-8B46-B484-D231-AD0C16CAC84F</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>dipesan</nameOnSource>
+<nameOnTarget>memesan</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>156475B7-41BC-A344-AD0A-8FDBC6E1C5C4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>03CD2DBC-7C92-6430-9039-8B365AAB6BD8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

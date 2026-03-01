@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EDEF81D6-0905-F411-5F6E-5262E99EE377" name="Mahasiswa">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 05:27:44 UTC</createdTime>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<engineerTo>
+<item key="56576680-D5B4-A5B3-1C7D-271840857319" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NIM" id="1ECB0D6B-48CF-D62C-C4C7-DCC573EC1160">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 05:27:59 UTC</createdTime>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<engineerTo>
+<item key="56576680-D5B4-A5B3-1C7D-271840857319" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nama_Mhs" id="2BCE8EA3-5FEF-E121-01E9-251CFC352C12">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 05:28:21 UTC</createdTime>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<engineerTo>
+<item key="56576680-D5B4-A5B3-1C7D-271840857319" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tahun_Masuk" id="E615FD71-D2B4-A496-99D5-92EBF2465B32">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 05:28:43 UTC</createdTime>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<engineerTo>
+<item key="56576680-D5B4-A5B3-1C7D-271840857319" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="EABD82B0-0CDF-8518-9788-9777F87C759C">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 05:29:10 UTC</createdTime>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<engineerTo>
+<item key="56576680-D5B4-A5B3-1C7D-271840857319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Kode_Prodi" id="0FC01AA8-C87C-B4BB-073F-B99D110E1B8B">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:10:41 UTC</createdTime>
+<generatorID>61742EC6-9DED-77DD-59C8-4316DEAF776A</generatorID>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<engineerTo>
+<item key="56576680-D5B4-A5B3-1C7D-271840857319" value="true"/>
+</engineerTo>
+<referedAttribute>19EE3DBE-83CA-03E6-B087-6A24926F18CD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E0FDAD73-FB78-C960-4311-4532DC3D281C" name="Mahasiswa PK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 05:28:19 UTC</createdTime>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="56576680-D5B4-A5B3-1C7D-271840857319" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1ECB0D6B-48CF-D62C-C4C7-DCC573EC1160</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

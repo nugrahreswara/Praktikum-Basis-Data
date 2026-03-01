@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B9B32750-4360-70E5-7AF4-34CC42D41D7C" containerWithKeyObject="B829912E-8FD2-AEF5-2F35-293FF6BDAF01" localFKIndex="EB7CDAF4-FB18-C36B-E235-BEBE0D9C8829" name="pemesanan_kamar_FK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>2836A31A-3967-F46F-EDA8-038475519162</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<referredTableLongName>kamar</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>33FCF16C-6E67-9700-92D4-E4567BF01BD3</referredTableID>
+<keyObject>78EC4FA1-8DC1-D47D-50FA-9B5087F8EDAA</keyObject>
+<referredKeyID>78EC4FA1-8DC1-D47D-50FA-9B5087F8EDAA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_kamar</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26A045E8-6B90-504C-347E-47A10A528429" name="tamu">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>A954D5D3-ED8B-E46C-02E8-9DAF3952A729</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<abbreviation>tm</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tamu" id="DF69BB43-1087-7C55-AAA3-EBEAB326A456">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>01A44519-ACA3-F3F2-8181-0B415B713FE1</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nama_lengkap" id="B35D97B1-F460-BB97-1EE9-E46B0182286E">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>08637D52-F354-C0CD-2FB0-F9ABA1A20A6B</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nik_paspor" id="DD02C2FB-CD48-202E-B3ED-E3A64B6C8AE5">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<comment><![CDATA[NIK / Paspor tamu]]></comment>
+<generatorID>45923D29-35E1-5A7C-9F7E-B9B229AEC803</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alamat_email" id="CF243496-6BA8-6974-C1A6-849FB32A1903">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>C37A1E25-83B0-27BA-F229-B811DF3A3154</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="no_telepon" id="6B1DCEE2-E43E-D144-C305-19730DEAD8A8">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>420CD428-403B-9219-8053-78EAF201EB05</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4792F611-C183-02A9-D15A-9A240C09F2AC" name="tamu_PK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>CEC9D27B-6510-63B6-9D68-60082A91EF4B</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF69BB43-1087-7C55-AAA3-EBEAB326A456"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65F61D53-4374-BEE4-BB47-B19B5CF4D08F" name="hotel">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>620509FF-ADB3-5BBC-A4E8-E991832A2AF3</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<abbreviation>htl</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_hotel" id="E76FBAD2-5278-11B4-0AF1-43987EB50B91">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>4A498A46-219E-A804-049A-230F93EDE80F</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nama_hotel" id="A7B09401-6330-70FA-8680-AA70863675C1">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>83F31C1D-C163-BCD5-36D6-5E4F5FB5AC05</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alamat" id="B447781F-77C4-EC8A-7887-60746B9D9F28">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>82691AD0-77D3-6BAD-4D69-C576C0FB97F6</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bintang" id="4D9A7A6B-E7C4-4C45-DDAC-879D691AE396">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<comment><![CDATA[Bintang 1 - 5]]></comment>
+<generatorID>7EA2446E-FF2B-D7CB-F387-BE20091DD3CA</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alamat_email" id="510FC40E-D385-7645-4333-B75F07C014C6">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>B733B3A6-C30A-BE0A-37C4-13FAD7F43922</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="no_telepon" id="EF3274DF-301F-4265-A084-2EA3DDC1D292">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>5CBECAA2-73E0-CB68-1F04-06F1263AD79C</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1149C93E-A8D2-E0EE-358D-16D54F9260DC" name="hotel_PK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>E52D1F2F-2794-B40C-51D2-874BFF53CFE7</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E76FBAD2-5278-11B4-0AF1-43987EB50B91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

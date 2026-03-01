@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B829912E-8FD2-AEF5-2F35-293FF6BDAF01" name="pemesanan">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>03CD2DBC-7C92-6430-9039-8B365AAB6BD8</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<abbreviation>pm</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pemesanan" id="24A26A90-BC64-BF04-953E-789F0F2CC86B">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>50299753-7CDC-2F3D-8540-22F53764EF73</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tanggal_pesan" id="0DC7B5A5-AA6B-66C3-752B-A66B7ACDD2B3">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<comment><![CDATA[Tanggal pemesanan]]></comment>
+<generatorID>C73212CD-515A-8A19-DEC6-ACD7749CA8D8</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tanggal_checkin" id="D347A142-61BE-10FF-574D-F42B5ED7AFAE">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<comment><![CDATA[Tanggal Masuk]]></comment>
+<generatorID>7D67AC6B-71E9-AB4B-DD4D-1D838BFA7251</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tanggal_checkout" id="9EC51428-D398-4694-6FD4-AAAF080452CC">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<comment><![CDATA[Tanggal Keluar]]></comment>
+<generatorID>5F46B929-485A-A738-A777-BACA7F54E676</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_pemesanan" id="78DFD3A9-260C-5988-86CA-AA232F41AC0A">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<comment><![CDATA[Status pemesanan (Menunggu pembayaran /  Lunas /  Dibatalkan)]]></comment>
+<generatorID>DC20C2FD-F14B-0BC3-E5E4-06A4ABBFB5A7</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_harga" id="A25EE945-D0FF-D1DD-92CB-BC4EEA6CA46D">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<comment><![CDATA[Total biaya menginap]]></comment>
+<generatorID>3D21DD5B-3D7A-F2AD-D8AA-4F31BE7DE1FF</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tamu_id_tamu" id="E4D02DB1-4227-3AAE-4BA3-B1A3F2924F20">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>7EDADB62-65AE-B16B-B413-F8C8F015E45D</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2766C46E-796C-FD89-DDD0-3CE3218FBC06" referredColumn="DF69BB43-1087-7C55-AAA3-EBEAB326A456"/>
+</associations>
+</Column>
+<Column name="kamar_id_kamar" id="DF12701B-26D9-F819-9910-ED7F0BA71981">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>2070D82A-58CD-D95B-6187-39A96B72C898</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9B32750-4360-70E5-7AF4-34CC42D41D7C" referredColumn="DC640D9D-D30A-E04A-0D0F-2666F6FEF1F3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC227E11-7237-EAE5-D9E4-52B2C3F2E2E0" name="pemesanan_PK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>F521E716-63B2-FAB1-9010-8614423B81FA</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24A26A90-BC64-BF04-953E-789F0F2CC86B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00935858-E27D-45C1-F55F-EDD86B0341D5" name="pemesanan_tamu_FK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>A9F16A31-A89D-AD9C-541B-F41238081D0C</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4D02DB1-4227-3AAE-4BA3-B1A3F2924F20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB7CDAF4-FB18-C36B-E235-BEBE0D9C8829" name="pemesanan_kamar_FK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>2836A31A-3967-F46F-EDA8-038475519162</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF12701B-26D9-F819-9910-ED7F0BA71981"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

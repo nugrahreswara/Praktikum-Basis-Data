@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pesan" directorySegmentName="seg_0" id="A9F16A31-A89D-AD9C-541B-F41238081D0C">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:31:14 UTC</createdTime>
+<comment><![CDATA[Tamu ke Pemesanan bersifat Optional karena bisa saja tamu mendaftar akun  dan mengisi data diri di website hotel.]]></comment>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<sourcePk>CEC9D27B-6510-63B6-9D68-60082A91EF4B</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>memesan</nameOnSource>
+<nameOnTarget>dipesan</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A954D5D3-ED8B-E46C-02E8-9DAF3952A729</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>03CD2DBC-7C92-6430-9039-8B365AAB6BD8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

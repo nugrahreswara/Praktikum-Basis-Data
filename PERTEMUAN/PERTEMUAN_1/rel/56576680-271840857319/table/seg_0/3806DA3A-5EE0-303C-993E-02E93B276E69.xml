@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3806DA3A-5EE0-303C-993E-02E93B276E69" name="Regis_MK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>AEFBD8BF-DC14-3C35-E3D0-A80B49F72A49</generatorID>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Regis" id="3FEA5AE6-E383-02D4-03E7-A6E6FE7BBEBC">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>16ED38B5-AD01-4ED9-AB89-88B2051733D3</generatorID>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nilai" id="CF7F10A3-590C-76A4-31D4-EDB367BE93FC">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>5367EA40-6B32-A5A0-C698-F1610A4EC921</generatorID>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kelas_Kode_Kelas" id="7C4FE9FB-7C13-78BF-487F-DE20641D19B5">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>4664ECF9-B298-DF5E-705A-E9D790187C02</generatorID>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD59ACEC-6939-2785-D158-D9EFE3EC1D49" referredColumn="CE7A3B7F-5378-26FA-5DCF-045782FE8C7B"/>
+</associations>
+</Column>
+<Column name="Mahasiswa_NIM" id="DE361566-B177-7914-7F9D-A3B1DB1F4CB3">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>422D4B88-E0DD-7BCB-EBCA-F33662CA268C</generatorID>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B34888CF-CF82-B0B3-DA92-83EC1336B225" referredColumn="984AA319-2A4B-E0ED-D601-BF0AAACEEE2D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="28B77D66-D755-AB6B-D070-4454817FCF5D" name="Regis_MK_PK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>F8D813F1-A1C4-896D-BB7D-2B7B7E718D1A</generatorID>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FEA5AE6-E383-02D4-03E7-A6E6FE7BBEBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A893EE2-7503-EACD-8E63-B4E4DED084F9" name="Regis_MK_Mahasiswa_FK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>107A15B8-8320-A94B-2ED0-538F137D7E2D</generatorID>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE361566-B177-7914-7F9D-A3B1DB1F4CB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D761C1C7-BAFC-15AA-2FFD-421493D5A54E" name="Regis_MK_Kelas_FK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-25 06:09:32 UTC</createdTime>
+<generatorID>B2DFAA4F-7452-9876-863F-4CCFF7EF31E0</generatorID>
+<ownerDesignName>PERTEMUAN_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C4FE9FB-7C13-78BF-487F-DE20641D19B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

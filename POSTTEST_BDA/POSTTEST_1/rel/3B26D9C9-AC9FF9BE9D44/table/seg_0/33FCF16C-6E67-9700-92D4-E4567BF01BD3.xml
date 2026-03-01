@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="33FCF16C-6E67-9700-92D4-E4567BF01BD3" name="kamar">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>156475B7-41BC-A344-AD0A-8FDBC6E1C5C4</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<abbreviation>kmr</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_kamar" id="DC640D9D-D30A-E04A-0D0F-2666F6FEF1F3">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>DB1518C7-070E-F812-D645-3D53B3027B19</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nomor_kamar" id="830A1ADB-702D-1712-AEE0-ED709E40044F">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>19F00300-B783-311A-C3D4-F8335CA6BC34</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipe_kamar" id="3CE97D05-8EA9-7089-7F2F-E5EC761DCBC2">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<comment><![CDATA[Reguler / Twin bed / Deluxe / Suite]]></comment>
+<generatorID>6A10909B-8253-3474-8239-5470A412435B</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="harga_per_malam" id="2E935104-2CEB-4C94-C508-4449A3DE3FC5">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>BF2386ED-CF2A-535F-F043-4E5FE8A9FCD2</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_ketersediaan" id="8A84F595-6665-6ACA-EA57-52107D36CDB4">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<comment><![CDATA[Tersedia / Dipesan / Perbaikan / Perawatan / Sedang Dibersihkan]]></comment>
+<generatorID>61DBD655-1D69-0B3D-CDAD-1667EAB1D0F3</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hotel_id_hotel" id="4EC79085-1865-E3A8-115A-E44962738A48">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>B18998D1-E038-251E-2FB3-9FC42820AB61</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DB1D54D-F274-901C-01BD-9E78D7B79B71" referredColumn="E76FBAD2-5278-11B4-0AF1-43987EB50B91"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78EC4FA1-8DC1-D47D-50FA-9B5087F8EDAA" name="kamar_PK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>7A39818B-8B46-B484-D231-AD0C16CAC84F</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC640D9D-D30A-E04A-0D0F-2666F6FEF1F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13F603E1-FB92-F2CC-C991-9519FDBC882B" name="kamar_hotel_FK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<generatorID>51ABAFDE-9765-FDA6-A9D7-BB6FBAD241DD</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EC79085-1865-E3A8-115A-E44962738A48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

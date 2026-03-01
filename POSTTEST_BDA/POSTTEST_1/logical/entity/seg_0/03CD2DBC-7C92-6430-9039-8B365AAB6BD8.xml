@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="03CD2DBC-7C92-6430-9039-8B365AAB6BD8" name="pemesanan">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:20:54 UTC</createdTime>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>pm</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pemesanan" id="50299753-7CDC-2F3D-8540-22F53764EF73">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:21:03 UTC</createdTime>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tanggal_pesan" id="C73212CD-515A-8A19-DEC6-ACD7749CA8D8">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 04:41:42 UTC</createdTime>
+<comment><![CDATA[Tanggal pemesanan]]></comment>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tanggal_checkin" id="7D67AC6B-71E9-AB4B-DD4D-1D838BFA7251">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:21:41 UTC</createdTime>
+<comment><![CDATA[Tanggal Masuk]]></comment>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tanggal_checkout" id="5F46B929-485A-A738-A777-BACA7F54E676">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:22:14 UTC</createdTime>
+<comment><![CDATA[Tanggal Keluar]]></comment>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_pemesanan" id="DC20C2FD-F14B-0BC3-E5E4-06A4ABBFB5A7">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:23:04 UTC</createdTime>
+<comment><![CDATA[Status pemesanan (Menunggu pembayaran /  Lunas /  Dibatalkan)]]></comment>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_harga" id="3D21DD5B-3D7A-F2AD-D8AA-4F31BE7DE1FF">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:23:16 UTC</createdTime>
+<comment><![CDATA[Total biaya menginap]]></comment>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tamu" id="7EDADB62-65AE-B16B-B413-F8C8F015E45D">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:31:14 UTC</createdTime>
+<generatorID>A9F16A31-A89D-AD9C-541B-F41238081D0C</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<referedAttribute>01A44519-ACA3-F3F2-8181-0B415B713FE1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_kamar" id="AB461B4B-69D3-2BE6-2F9D-D6F239479034">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 08:14:38 UTC</createdTime>
+<generatorID>E525DB71-3409-434C-A566-CFA479C76041</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<referedAttribute>DB1518C7-070E-F812-D645-3D53B3027B19</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F521E716-63B2-FAB1-9010-8614423B81FA" name="pemesanan PK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:21:30 UTC</createdTime>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>50299753-7CDC-2F3D-8540-22F53764EF73</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

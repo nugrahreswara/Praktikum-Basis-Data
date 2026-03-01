@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="POSTTEST_1" id="B636A194-5EA1-9C4B-098E-EB146C6F2C76" version="3.5">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:03:09 UTC</createdTime>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B636A194-5EA1-9C4B-098E-EB146C6F2C76</designId>
+</OSDM_Design>

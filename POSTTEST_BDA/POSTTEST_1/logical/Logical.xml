@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="6223D928-72AA-7ABC-A4C2-617EF29B5F45" mainViewID="4D64EC0B-9128-0C01-988A-D42B1E049001">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:03:09 UTC</createdTime>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

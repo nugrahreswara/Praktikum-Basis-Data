@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2766C46E-796C-FD89-DDD0-3CE3218FBC06" containerWithKeyObject="B829912E-8FD2-AEF5-2F35-293FF6BDAF01" localFKIndex="00935858-E27D-45C1-F55F-EDD86B0341D5" name="pemesanan_tamu_FK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 05:48:59 UTC</createdTime>
+<comment><![CDATA[Tamu ke Pemesanan bersifat Optional karena bisa saja tamu mendaftar akun  dan mengisi data diri di website hotel.]]></comment>
+<generatorID>A9F16A31-A89D-AD9C-541B-F41238081D0C</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<referredTableLongName>tamu</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>26A045E8-6B90-504C-347E-47A10A528429</referredTableID>
+<keyObject>4792F611-C183-02A9-D15A-9A240C09F2AC</keyObject>
+<referredKeyID>4792F611-C183-02A9-D15A-9A240C09F2AC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tamu</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

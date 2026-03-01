@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="156475B7-41BC-A344-AD0A-8FDBC6E1C5C4" name="kamar">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:09:25 UTC</createdTime>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>kmr</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_kamar" id="DB1518C7-070E-F812-D645-3D53B3027B19">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:09:34 UTC</createdTime>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nomor_kamar" id="19F00300-B783-311A-C3D4-F8335CA6BC34">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:09:51 UTC</createdTime>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipe_kamar" id="6A10909B-8253-3474-8239-5470A412435B">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:11:37 UTC</createdTime>
+<comment><![CDATA[Reguler / Twin bed / Deluxe / Suite]]></comment>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="harga_per_malam" id="BF2386ED-CF2A-535F-F043-4E5FE8A9FCD2">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:15:27 UTC</createdTime>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_ketersediaan" id="61DBD655-1D69-0B3D-CDAD-1667EAB1D0F3">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 04:38:52 UTC</createdTime>
+<comment><![CDATA[Tersedia / Dipesan / Perbaikan / Perawatan / Sedang Dibersihkan]]></comment>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_hotel" id="B18998D1-E038-251E-2FB3-9FC42820AB61">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-03-01 04:27:12 UTC</createdTime>
+<generatorID>51ABAFDE-9765-FDA6-A9D7-BB6FBAD241DD</generatorID>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<referedAttribute>4A498A46-219E-A804-049A-230F93EDE80F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7A39818B-8B46-B484-D231-AD0C16CAC84F" name="kamar PK">
+<createdBy>nugrah</createdBy>
+<createdTime>2026-02-28 14:09:49 UTC</createdTime>
+<ownerDesignName>POSTTEST_1</ownerDesignName>
+<engineerTo>
+<item key="3B26D9C9-1549-D456-C233-AC9FF9BE9D44" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DB1518C7-070E-F812-D645-3D53B3027B19</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
