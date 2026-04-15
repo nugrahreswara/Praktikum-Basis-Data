@@ -1,6 +1,6 @@
 -- Membuat database baru dan menggunakannya
-CREATE DATABASE POSTTEST_4;
-USE POSTTEST_4;
+CREATE DATABASE POSTTEST_5;
+USE POSTTEST_5;
 
 
 -- Mendefinisikan struktur tabel pelanggan
@@ -38,6 +38,9 @@ INSERT INTO pelanggan (id, nama, alamat, umur, saldo, tanggal_bergabung) VALUES
 INSERT INTO pelanggan (id, nama, alamat, umur, saldo, tanggal_bergabung) VALUES
 	('5', 'Akbar Rachim', 'Jalan Yang Diatas', 19, 500000.00, '2026-01-31');
 
+INSERT INTO pelanggan (id, nama, alamat, umur, saldo, tanggal_bergabung) VALUES
+('6', 'Denny Mulia', 'Jalan Sepuh', 45, 71500.00, '2022-12-15'),
+('7', 'Muhammad Zidane Abdul Kadir', 'Jalan Luas', 50, 923010.00, '2021-05-20');
 
 -- Memasukkan data sampel ke tabel transaksi
 INSERT INTO transaksi VALUES
@@ -53,54 +56,50 @@ SELECT * FROM pelanggan;
 SELECT * FROM transaksi;
 
 
--- Memasukkan data baru untuk ketentuan tanggal_bergabung < '2023-01-01'
-INSERT INTO pelanggan (id, nama, alamat, umur, saldo, tanggal_bergabung) VALUES
-('6', 'Denny Mulia', 'Jalan Sepuh', 45, 71500.00, '2022-12-15'),
-('7', 'Muhammad Zidane Abdul Kadir', 'Jalan Luas', 50, 923010.00, '2021-05-20');
+-- Tugas 1: Menghitung jumlah baris yang memenuhi kriteria (COUNT)
+-- Menghitung jumlah pelanggan yang umurnya di atas 18 tahun
+;
+SELECT COUNT(*) AS jumlah_pelanggan_dewasa FROM pelanggan WHERE umur > 18;
 
- perintah menggunakan NOT IN dengan subquery
--- Mencari pelanggan yang ID-nya tidak ada dalam daftar ID di tabel transaksi (Asumsi ID pelanggan berelasi dengan ID transaksi jika ada foreign key)
--- Karena tabel transaksi kamu belum memiliki kolom id_pelanggan, saya contohkan logika umum mencari ID yang tidak terdaftar di list tertentu:
-SELECT * FROM pelanggan 
-WHERE id NOT IN (SELECT SUBSTRING(id, 6, 3) FROM transaksi); -- Contoh logika: mencari ID yang tidak ada di potongan string ORDERxxx
-
--- Mencari pelanggan yang namanya tidak termasuk dalam daftar nama tertentu hasil subquery
-SELECT * FROM pelanggan 
-WHERE nama NOT IN (SELECT nama FROM pelanggan WHERE saldo < 50000);
-
--- 2. Dua perintah menggunakan ORDER BY descending
--- Perintah 1: Kondisi umur < 30 Tahun diurutkan berdasarkan umur terbesar
-SELECT * FROM pelanggan 
-WHERE umur < 30 
-ORDER BY umur DESC;
-
--- Perintah 2: Kondisi tanggal_bergabung < Januari 2023 diurutkan dari yang paling baru (Desember ke bawah)
-SELECT * FROM pelanggan 
-WHERE tanggal_bergabung < '2023-01-01' 
-ORDER BY tanggal_bergabung DESC;
-
--- 3. Satu perintah menggunakan ALL
--- Mencari pelanggan yang saldonya lebih besar dari SEMUA nilai total_pembelian di tabel transaksi
-SELECT * FROM pelanggan 
-WHERE saldo > ALL (SELECT total_pembelian FROM transaksi);
-
--- 4. Satu perintah menggunakan UNION
--- Menggabungkan kolom ID dan Nama dari pelanggan dengan ID dan Total Pembelian dari transaksi (sebagai string)
-SELECT id, nama AS keterangan FROM pelanggan
-UNION
-SELECT id, CAST(total_pembelian AS CHAR) FROM transaksi;
+-- Menghitung jumlah transaksi yang total pembeliannya lebih dari 100.000
+SELECT COUNT(*) AS jumlah_transaksi_besar FROM transaksi WHERE total_pembelian > 100000;
 
 
--- 5. Empat perintah menggunakan NOT LIKE
--- Pencarian spesifik 5 karakter (Menggunakan underscore _ sebanyak 5 kali)
-SELECT * FROM pelanggan WHERE nama NOT LIKE '_____';
+-- Tugas 2: Menjumlahkan nilai dari kolom tertentu (SUM)
+-- Menjumlahkan total saldo semua pelanggan yang tinggal di 'Jalan In Aja'
+SELECT SUM(saldo) AS total_saldo_jalan_in_aja FROM pelanggan WHERE alamat = 'Jalan In Aja';
 
--- Berdasarkan huruf awal (Mencari yang namanya TIDAK dimulai dengan huruf 'A')
-SELECT * FROM pelanggan WHERE nama NOT LIKE 'A%';
+-- Menjumlahkan total semua pembelian pada tabel transaksi
+SELECT SUM(total_pembelian) AS total_pendapatan FROM transaksi;
 
--- Berdasarkan huruf tengah (Mencari yang namanya TIDAK mengandung kata 'Ananda' di tengah)
-SELECT * FROM pelanggan WHERE nama NOT LIKE '%Ananda%';
 
--- Berdasarkan huruf akhir (Mencari yang namanya TIDAK diakhiri dengan huruf 'a')
-SELECT * FROM pelanggan WHERE nama NOT LIKE '%a';
+-- Tugas 3: Menghitung rata-rata nilai kolom tertentu (AVG)
+-- Menghitung rata-rata umur pelanggan
+SELECT AVG(umur) AS rata_rata_umur FROM pelanggan;
+-- Menghitung rata-rata total pembelian pada tabel transaksi
+SELECT AVG(total_pembelian) AS rata_rata_pembelian FROM transaksi;
 
+-- Tugas 4: Mencari nilai terendah (MIN) dan tertinggi (MAX)
+-- Mencari saldo terendah di tabel pelanggan
+SELECT MIN(saldo) AS saldo_paling_sedikit FROM pelanggan;
+-- Mencari total pembelian tertinggi di tabel transaksi
+SELECT MAX(total_pembelian) AS pembelian_termahal FROM transaksi;
+
+-- Tugas 5: Mengelompokkan data (GROUP BY) dengan syarat tertentu (HAVING)
+-- Mengelompokkan pelanggan berdasarkan umur dan hanya menampilkan umur yang memiliki lebih dari 1 orang
+SELECT umur, COUNT(*) AS jumlah_orang FROM pelanggan GROUP BY umur HAVING COUNT(*) > 1;
+
+-- Mengelompokkan transaksi berdasarkan tanggal (mengambil bagian tanggal saja) dan hanya tampil jika total harian > 100.000
+SELECT DATE(waktu_transaksi) AS tanggal, SUM(total_pembelian) AS total_harian  FROM transaksi GROUP BY tanggal HAVING total_harian > 100000;
+
+
+-- Tugas 6: Struktur CASE untuk mengkategorikan data
+-- Mengkategorikan pelanggan berdasarkan umur ke dalam kolom baru bernama 'kategori_usia'
+SELECT nama, umur,
+    CASE 
+        WHEN umur < 13 THEN 'Anak-anak'
+        WHEN umur BETWEEN 13 AND 19 THEN 'Remaja'
+        WHEN umur BETWEEN 20 AND 45 THEN 'Dewasa'
+        ELSE 'Lansia'
+    END AS kategori_usia
+FROM pelanggan;
